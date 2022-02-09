@@ -10,7 +10,6 @@ const buttonFunc = async function () {
 
     const json = await fetch('data.json')
     const data = await json.json()
-    console.log(data.length)
 
     buttons.forEach(el => el.addEventListener('click', function () {
         buttons.forEach(element => {
