@@ -8,7 +8,7 @@ const currentTime = document.querySelectorAll('.main-time');
 
 const buttonFunc = async function () {
 
-    const json = await fetch('data.json')
+    const json = await fetch('./data.json')
     const data = await json.json()
 
     buttons.forEach(el => el.addEventListener('click', function () {
